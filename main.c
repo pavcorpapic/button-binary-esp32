@@ -19,7 +19,7 @@ int app_main(){
     gpio_pad_select_gpio(led_pins[i]);
     gpio_set_direction(led_pins[i], GPIO_MODE_OUTPUT);
   }
-  gpio_config(BUTTON_PIN);
+  
   gpio_set_direction(BUTTON_PIN, GPIO_MODE_INPUT);
   gpio_set_pull_mode(BUTTON_PIN, GPIO_PULLUP_ONLY);
 
